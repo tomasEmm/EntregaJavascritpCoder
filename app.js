@@ -63,7 +63,56 @@ let AlturaUsuario = prompt ('Ingrese su altura')
 
 
     console.log(agenda[0])
-    
+
+/////////////////////////////////////////
+let fecha = new Date(6),
+  hora = fecha.getHours(6);
+
+let saludo = (hr) => {
+  if (hr <= 5) {
+    return 'a mimir!!!';
+  } else if(hr >= 6 && hr <= 11) {
+    return 'Buenos días!!!';
+  } else if(hr >= 12 && hr <= 18) {
+    return 'Buenas tardes!!!';
+  } else {
+    return 'Buenas noches!!!';
+  }
+};
+
+console.log( saludo(hora) )
+
+
+    //////////////////////////////////////////
+
+
+    console.log(document.getElementById("titulo"))
+    console.log(document.getElementById('texto'))
+
+
+    const nombre =prompt ('ingrese su nombre')
+    titulo.innerText="Bienvenido:" +  nombre + "!!"
+
+    const div =document.createElement('div')
+    div.className = "datos /2"
+    div.innerHTML = "<p> Introduccion</p>"
+
+    document.body.append(div)
+
+
+    const dias = ["Lunes", "Martes", "Miercoles", "Jueves", "Viernes"]
+
+    const listadias = document.getElementById('dias')
+
+    for(const dia of dias ) {
+        const li = document.createElement('li')
+
+        li.clasName="dias"
+
+        li.innerText = dias
+
+        listadias.append(li)
+    }
 
    // let array = ["lunes", "martes", "miércoles", "jueves", "viernes", "sábado", "domingo"]
 
