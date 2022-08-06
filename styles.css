@@ -1,0 +1,26 @@
+.modal-container {
+    background-color: rgba(26, 185, 60, 0);
+    width: 100%;
+    height: 100vw;
+    position: fixed;
+    inset: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    opacity: 0;
+    visibility: hidden;
+}
+
+.my-modal{
+    width: 450px;
+    height: 520px;
+    background-color: rgb(8, 140, 41);
+    z-index: 3;
+}
+
+.modal-container-activate{
+    opacity: 1;
+    visibility: visible;
+}

@@ -113,6 +113,31 @@ console.log( saludo(hora) )
 
         listadias.append(li)
     }
+    //////////
+
+    const btn1 =document.querySelector('#btn1')
+
+    btn1.addEventListener('click',() =>{
+      console.log("Aceptado")
+    })
+
+    btn1.addEventListener('mouseover', ()=>
+    {btn1.classList.toggle('btn-danger')})
+
+
+    btn2.addEventListener('click',()=>{
+    btn2.innerText= '=('
+    btn2.disabled =true })
+
+
+    btn3.onclick =() => {
+      console.log('click boton 3')
+    }
+
+    btn3.onmouseover =() => {
+      console.log("mouse over 3")
+    }
+
 
    // let array = ["lunes", "martes", "miércoles", "jueves", "viernes", "sábado", "domingo"]
 
